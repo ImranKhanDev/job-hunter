@@ -1,0 +1,10 @@
+.applied-jobs {
+  
+        border: 1px solid grey;
+        height: 450px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, rgba(126, 144, 254, 0.10) 0%, rgba(152, 115, 255, 0.10) 100%);
+        margin: 0px;
+
+
+}

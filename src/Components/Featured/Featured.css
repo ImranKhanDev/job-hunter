@@ -1,0 +1,22 @@
+.featured-container {
+    /* 
+     */
+}
+
+.featured {
+    text-align: center;
+}
+
+.all-jobs {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+}
+
+.load {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+   
+}

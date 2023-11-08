@@ -1,0 +1,22 @@
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    color: orange;
+}
+
+
+.banner-container p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.banner-container img {
+   height: 744px;
+    ;
+}

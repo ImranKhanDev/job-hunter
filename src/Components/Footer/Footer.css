@@ -1,0 +1,26 @@
+.footer-container{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+ 
+}
+
+.details {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main p{
+    width: 340px;
+}
