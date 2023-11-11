@@ -1,26 +1,29 @@
-.footer-container{
-    margin-top: 20px;
+.footer-container {
+  
     background-color: black;
     color: white;
-    padding: 20px;
- 
+    /* padding: 20px; */
+
+    margin: 0px 20px;
+    width: 100%;
 }
 
-.details {
-    display: flex;
-}
 
-.content {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
 
 .footer-item {
     display: flex;
-    justify-content: space-between;
+   
     align-items: center;
 }
-.main p{
+.footer-content{
+    display: flex;
+    justify-content:space-around;
+}
+
+.footer-content .para{
+    width: 64%;
+}
+
+.main p {
     width: 340px;
 }

@@ -1,0 +1,66 @@
+.joblist-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 7px;
+    /* margin: 20px 20px; */
+    padding: 20px;
+}
+
+.list-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.list-container img {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.list-container .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.btn-grp button {
+    margin-right: 20px;
+    background-color: #9873FF;
+}
+
+.location-salary {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.location-salary p {
+
+    /* padding:0px 10px; */
+    margin-right: 20px;
+}
+
+.view button {
+    background-color: #9873FF;
+    ;
+}
+
+@media only screen and (min-width: 600px) {
+    .list-container img {
+        background-color: grey;
+        padding: 20px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+
+}

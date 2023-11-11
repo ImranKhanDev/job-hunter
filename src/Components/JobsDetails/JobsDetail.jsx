@@ -16,7 +16,7 @@ const JobsDetail = () => {
     const job = jobs.find(jobb => jobb.id === idInt);
     // console.log(job);
 
-    const handleApplyJob=()=> {
+    const handleApplyJob = () => {
         saveJobApplication(idInt)
         toast('You have applied successfully')
     }
@@ -51,28 +51,28 @@ const JobsDetail = () => {
                     <p>   {job.experiences}</p>
                     <Link to='/'>Back to Home</Link>
                 </div>
-                <div className="job-details">
+                <div className="job-detail">
                     <div className="job_details_content">
                         <h1 className='info'>Job Details</h1>
                         <hr className='hr' />
                         <p> <span>💰Salary</span> : ${job.salary} (Per Month)</p>
 
                         <p>💼<span>Job Title</span> : {job.job_title}</p>
-                     
+
 
                         <h3 className='info'>Contact Information</h3>
-                          <hr className='hr' />
+                        <hr className='hr' />
                         <p> <span>📞Phone</span> : 0184679 00 00</p>
 
                         <p>📩<span>Email</span> : {job.job_title}</p>
                         <p>🏛<span>Address</span> : {job.job_title}</p>
                         <div><Toaster /></div>
-                       
+
                         <button onClick={handleApplyJob} className='apply'>Apply now</button>
                         <ToastContainer />
                     </div>
                 </div>
-          
+
             </div>
 
         </div>

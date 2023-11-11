@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 20px;
 }
 
 .text {
@@ -17,6 +18,34 @@
 }
 
 .banner-container img {
-   height: 744px;
+    height: 744px;
     ;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 20px;
+        flex-direction: column;
+    }
+
+    .banner-content h1 {
+        font-size: 18px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .banner-content button {
+        font-size: 12px;
+    }
+
+    .banner-container img {
+        height: 200px;
+    
+        ;
+    }
 }

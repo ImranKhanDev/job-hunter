@@ -1,38 +1,47 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { getStoredJobApplication } from '../../utilities/localstorage';
+import AppliedJobsList from '../AppliedJobsList/AppliedJobsList';
 
 const AppliedJobs = () => {
     const jobs = useLoaderData();
-    const [appliedJobs,setAppliedJobs] = useState([])
-    const [displayJobs,setDisplayJobs] = useState([])
-
-    useEffect(()=> {
-        const storedJobs= getStoredJobApplication()
-        if(jobs.length > 0) {
+    // console.log(jobs);
+    const [appliedJobs, setAppliedJobs] = useState([])
+    const [displayJobs, setDisplayJobs] = useState([])
+    // console.log(appliedJobs);
+    useEffect(() => {
+        const storedJobs = getStoredJobApplication()
+        if (jobs.length > 0) {
             const jobsApplied = []
-            for(const id of storedJobs) {
-                const job = jobs.find(job=>job.id === id) 
-                if(job){
+            for (const id of storedJobs) {
+                const job = jobs.find(job => job.id === id)
+                if (job) {
                     jobsApplied.push(job)
                 }
             }
             setAppliedJobs(jobsApplied)
             setDisplayJobs(jobsApplied)
         }
-    },[jobs])
+    }, [jobs])
 
 
     return (
         <div className='applied-jobs'>
-            <h2> Jobs I applied {appliedJobs.length}</h2>
 
+            <div className="title">
+                <h1>Applied Jobs</h1>
+                <Link to='/'>
+                    <p>Go to back</p>
+                </Link>
+            </div>
 
-            <ul>
-             {   displayJobs.map(job=> <li key={job.id}>
-                <span>{job.job_title}</span>
-                </li>)}
-            </ul>
+         <div className="job-list">
+                <ul>
+                    {displayJobs.map(job => 
+                     <AppliedJobsList job={job} key={job.id}></AppliedJobsList>)
+                 }
+                </ul>
+         </div>
         </div>
     );
 };
